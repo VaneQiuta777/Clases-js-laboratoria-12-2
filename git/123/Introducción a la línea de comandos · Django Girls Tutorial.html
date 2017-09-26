@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://tutorial.djangogirls.org/es/intro_to_command_line/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <title>Introducción a la línea de comandos · Django Girls Tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="DjangoGirls">
+        
+        
+    
+    <style class="anchorjs"></style><link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/plugin(1).css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introducción a la línea de comandos · Django Girls Tutorial_files/website(1).css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://tutorial.djangogirls.org/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="https://tutorial.djangogirls.org/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="https://tutorial.djangogirls.org/es/python_installation/">
+    
+    
+    <link rel="prev" href="https://tutorial.djangogirls.org/es/how_the_internet_works/">
+    
+
+    </head>
+    <body>
+        
+<div class="book without-animation with-summary font-size-2 font-family-1">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://www.gitbook.com/book/djangogirls/djangogirls-tutorial" target="_blank" class="custom-link">Django Girls Tutorial</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="https://tutorial.djangogirls.org/es/">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../how_the_internet_works/">
+            
+                <a href="https://tutorial.djangogirls.org/es/how_the_internet_works/">
+            
+                    
+                    ¿Cómo funciona Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="https://tutorial.djangogirls.org/es/intro_to_command_line/">
+            
+                    
+                    Introducción a la línea de comandos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python_installation/">
+            
+                <a href="https://tutorial.djangogirls.org/es/python_installation/">
+            
+                    
+                    Instalación de Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../code_editor/">
+            
+                <a href="https://tutorial.djangogirls.org/es/code_editor/">
+            
+                    
+                    Editor de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_introduction/">
+            
+                <a href="https://tutorial.djangogirls.org/es/python_introduction/">
+            
+                    
+                    Introducción a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../django/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django/">
+            
+                    
+                    ¿Qué es Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django_installation/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_installation/">
+            
+                    
+                    Instalación de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_start_project/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_start_project/">
+            
+                    
+                    Comenzar un proyecto en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_models/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_models/">
+            
+                    
+                    Modelos en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_admin/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_admin/">
+            
+                    
+                    Administrador de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../deploy/">
+            
+                <a href="https://tutorial.djangogirls.org/es/deploy/">
+            
+                    
+                    ¡Desplegar!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_urls/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_views/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_views/">
+            
+                    
+                    Vistas de Django - ¡Es hora de crear!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../html/">
+            
+                <a href="https://tutorial.djangogirls.org/es/html/">
+            
+                    
+                    Introducción a HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_orm/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_orm/">
+            
+                    
+                    ORM de Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../dynamic_data_in_templates/">
+            
+                <a href="https://tutorial.djangogirls.org/es/dynamic_data_in_templates/">
+            
+                    
+                    Datos dinámicos en plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_templates/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_templates/">
+            
+                    
+                    Plantillas de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../css/">
+            
+                <a href="https://tutorial.djangogirls.org/es/css/">
+            
+                    
+                    CSS - Hazlo bonito
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../template_extending/">
+            
+                <a href="https://tutorial.djangogirls.org/es/template_extending/">
+            
+                    
+                    Extender plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../extend_your_application/">
+            
+                <a href="https://tutorial.djangogirls.org/es/extend_your_application/">
+            
+                    
+                    Amplía tu aplicación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../django_forms/">
+            
+                <a href="https://tutorial.djangogirls.org/es/django_forms/">
+            
+                    
+                    Formularios en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../whats_next/">
+            
+                <a href="https://tutorial.djangogirls.org/es/whats_next/">
+            
+                    
+                    ¿Qué sigue?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com/" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://store.djangogirls.org/" target="_blank">
+      
+        <img src="./Introducción a la línea de comandos · Django Girls Tutorial_files/codelikeagirl---mockup4_large.jpg">
+      
+        </a>
+      
+      
+        <p>💖 Support our work and buy a Django Girls t-shirt! ✨</p>
+      
+      
+      <a href="https://store.djangogirls.org/" class="btn" target="_blank">
+        Get a t-shirt!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="https://tutorial.djangogirls.org/es/intro_to_command_line/#"><i class="fa fa-align-justify"></i></a><a class="btn pull-right js-toolbar-action" aria-label="GitHub" href="https://tutorial.djangogirls.org/es/intro_to_command_line/#"><i class="fa fa-github"></i></a><div class="dropdown pull-left language-picker js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Change language" href="https://tutorial.djangogirls.org/es/intro_to_command_line/#"><i class="fa fa-globe"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div></div></div><div class="dropdown pull-right js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Share" href="https://tutorial.djangogirls.org/es/intro_to_command_line/#"><i class="fa fa-share-alt"></i></a><div class="dropdown-menu dropdown-left"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-5 ">Facebook</button><button class="button size-5 ">Google+</button><button class="button size-5 ">Twitter</button><button class="button size-5 ">Weibo</button><button class="button size-5 ">Instapaper</button></div></div></div><a class="btn pull-right js-toolbar-action" aria-label="" href="https://tutorial.djangogirls.org/es/intro_to_command_line/#"><i class="fa fa-facebook"></i></a><a class="btn pull-right js-toolbar-action" aria-label="" href="https://tutorial.djangogirls.org/es/intro_to_command_line/#"><i class="fa fa-twitter"></i></a><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="https://tutorial.djangogirls.org/es/intro_to_command_line/#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><h1 id="introduccin-a-la-lnea-de-comandos">
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="https://tutorial.djangogirls.org/es/">Introducción a la línea de comandos</a>
+    <a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#introduccin-a-la-lnea-de-comandos" aria-label="Anchor link for: introduccin a la lnea de comandos" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introducción-a-la-interfaz-de-línea-de-comandos">Introducción a la interfaz de línea de comandos<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#introducción-a-la-interfaz-de-línea-de-comandos" aria-label="Anchor link for: introducción a la interfaz de línea de comandos" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h1>
+<p>Es emocionante, ¿verdad? Vas a escribir tu primera línea de código en pocos minutos :)</p>
+<p><strong>Permítenos presentarte a tu primer nuevo amigo: ¡la línea de comandos!</strong></p>
+<p>Los siguientes pasos te mostrarán cómo usar aquella ventana negra que todos los hackers usan. Puede parecer un poco aterrador al principio pero es solo un mensaje en pantalla que espera a que le des órdenes.</p>
+<h2 id="¿qué-es-la-línea-de-comandos">¿Qué es la línea de comandos?<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#¿qué-es-la-línea-de-comandos" aria-label="Anchor link for: ¿qué es la línea de comandos" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>La ventana, que generalmente es llamada <strong>línea de comandos</strong> o <strong>interfaz de línea de comandos</strong>, es una aplicación basada en texto para ver, manejar y manipular archivos en tu computadora (como por ejemplo el Explorador de Windows o Finder en Mac, pero sin la interfaz gráfica). Otros nombres para la línea de comandos son: <em>cmd</em>, <em>CLI</em>, <em>símbolo del sistema</em>, <em>consola</em> o <em>terminal</em>.</p>
+<h2 id="abrir-la-interfaz-de-línea-de-comandos">Abrir la interfaz de línea de comandos<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#abrir-la-interfaz-de-línea-de-comandos" aria-label="Anchor link for: abrir la interfaz de línea de comandos" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Lo primero que debemos hacer para empezar a experimentar con nuestra interfaz de linea de comandos es abrirla.</p>
+<h3 id="windows">Windows<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#windows" aria-label="Anchor link for: windows" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Ir al menú Inicio → Todos los programas → Accesorios → Command Prompt</p>
+<h3 id="mac-os-x">Mac OS X<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#mac-os-x" aria-label="Anchor link for: mac os x" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Aplicaciones → Servicios → Terminal</p>
+<h3 id="linux">Linux<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#linux" aria-label="Anchor link for: linux" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Está probablemente en Aplicaciones → Accesorios → Terminal, pero eso depende de tu distribución. Si no lo encuentras, Googlealo :)</p>
+<h2 id="prompt">Prompt<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#prompt" aria-label="Anchor link for: prompt" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.</p>
+<p>Si estás en Mac o Linux, probablemente verás <code>$</code>, así:</p>
+<pre><code>$
+</code></pre><p>En Windows, es un signo así <code>&gt;</code>, como este:</p>
+<pre><code>&gt;
+</code></pre><p>Cada comando será precedido por este signo y un espacio, pero no tienes que escribirlo. Tu computadora lo hará por ti :)</p>
+<blockquote>
+<p>Sólo una pequeña nota: en tu caso, tal vez hay algo como <code>C:\Users\ola&gt;</code> o <code>Olas-MacBook-Air:~ ola$</code> antes del prompt y eso es 100% correcto. En este tutorial lo simplificaremos lo más posible.</p>
+</blockquote>
+<h2 id="tu-primer-comando-¡yay">Tu primer comando (¡YAY!)<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#tu-primer-comando-¡yay" aria-label="Anchor link for: tu primer comando ¡yay" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Vamos a empezar con algo simple. Escribe este comando:</p>
+<pre><code>$ whoami
+</code></pre><p>o</p>
+<pre><code>&gt; whoami
+</code></pre><p>Y luego oprime la tecla Enter. Este es el resultado:</p>
+<pre><code>$ whoami olasitarska
+</code></pre><p>Como puedes ver, la computadora sólo te presentó tu nombre de usuario. Bien, ¿eh? :)</p>
+<blockquote>
+<p>Trata de escribir cada comando, no copies y pegues. ¡Te acordarás más de esta manera!</p>
+</blockquote>
+<h2 id="básicos">Básicos<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#básicos" aria-label="Anchor link for: básicos" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Cada sistema operativo tiene un conjunto diferente de comandos para la línea de comandos, así que asegúrate de seguir las instrucciones para tu sistema operativo. Vamos a intentarlo, ¿de acuerdo?</p>
+<h3 id="directorio-actual">Directorio actual<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#directorio-actual" aria-label="Anchor link for: directorio actual" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Sería bueno saber dónde estamos ahora, ¿cierto? Vamos a ver. Escribe este comando y oprime Enter:</p>
+<pre><code>$ pwd
+/Users/olasitarska
+</code></pre><p>Si estás en Windows:</p>
+<pre><code>&gt; cd 
+C:\Users\olasitarska
+</code></pre><p>Probablemente verás algo similar en tu máquina. Una vez que abres la línea de comandos generalmente empiezas en el directorio home de tu usuario.</p>
+<blockquote>
+<p>Nota: 'pwd' significa 'print working directory' - en español, 'mostrar directorio de trabajo'.</p>
+</blockquote>
+<hr>
+<h3 id="lista-de-archivos-y-directorios">Lista de archivos y directorios<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#lista-de-archivos-y-directorios" aria-label="Anchor link for: lista de archivos y directorios" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>¿Qué hay aquí? Sería bueno saber. Veamos:</p>
+<pre><code>$ ls
+Applications
+Desktop
+Downloads
+Music
+...
+</code></pre><p>Windows:</p>
+<pre><code>&gt; dir
+Directory of C:\Users\olasitarska
+05/08/2014 07:28 PM &lt;DIR&gt; Applications
+05/08/2014 07:28 PM &lt;DIR&gt; Desktop
+05/08/2014 07:28 PM &lt;DIR&gt; Downloads
+05/08/2014 07:28 PM &lt;DIR&gt; Music
+...
+</code></pre><hr>
+<h3 id="cambia-el-directorio-actual">Cambia el directorio actual<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#cambia-el-directorio-actual" aria-label="Anchor link for: cambia el directorio actual" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>¿Quizás podemos ir a nuestro escritorio?</p>
+<pre><code>$ cd Desktop
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd Desktop
+</code></pre><p>Comprueba si realmente ha cambiado:</p>
+<pre><code>$ pwd 
+/Users/olasitarska/Desktop
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd 
+C:\Users\olasitarska\Desktop
+</code></pre><p>¡Aquí está!</p>
+<blockquote>
+<p>Pro tip: si escribes <code>cd D</code> y luego oprimes <code>tab</code> en el teclado, la línea de comandos automáticamente completará el resto del nombre para que puedas navegar más rápido. Si hay más de una carpeta que empiece con "D", presiona el botón <code>tab</code> dos veces para obtener una lista de opciones.</p>
+</blockquote>
+<hr>
+<h3 id="crear-directorio">Crear directorio<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#crear-directorio" aria-label="Anchor link for: crear directorio" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>¿Qué tal si creamos un directorio de Django Girls en tu escritorio? Puedes hacerlo de esta manera:</p>
+<pre><code>$ mkdir djangogirls
+</code></pre><p>Windows:</p>
+<pre><code>&gt; mkdir djangogirls
+</code></pre><p>Este pequeño comando creará una carpeta con el nombre <code>djangogirls</code> en tu escritorio. ¡Puedes comprobar si está allí buscando en tu escritorio o ejecutando el comando <code>ls</code> (si estás usando Mac o Linux) o <code>dir</code> (si estás usando Windows)! Inténtalo :)</p>
+<blockquote>
+<p>Pro tip: Si no quieres escribir una y otra vez los mismos comandos, prueba oprimiendo la <code>flecha arriba</code> y <code>flecha abajo</code> de tu teclado para ver recientes comandos utilizados.</p>
+</blockquote>
+<hr>
+<h3 id="¡ejercicios">¡Ejercicios!<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#¡ejercicios" aria-label="Anchor link for: ¡ejercicios" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Un pequeño reto para ti: en el directorio recién creado <code>djangogirls</code> crea un directorio llamado <code>test</code>. Utiliza los comandos <code>cd</code> y <code>mkdir</code>.</p>
+<h4 id="solución">Solución:<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#solución" aria-label="Anchor link for: solución" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<pre><code>$ cd djangogirls 
+$ mkdir test
+$ ls
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd djangogirls 
+&gt; mkdir test
+&gt; dir 
+08/05/2014 19:28 &lt; DIR &gt; test
+</code></pre><p>¡Felicitaciones! :)</p>
+<hr>
+<h3 id="limpiar">Limpiar<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#limpiar" aria-label="Anchor link for: limpiar" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>No queremos dejar un desorden, así que vamos a eliminar todo lo que hicimos hasta este momento.</p>
+<p>En primer lugar, tenemos que volver al escritorio:</p>
+<pre><code>$ cd ..
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd ..
+</code></pre><p><code>cd</code> <code>..</code> cambiará el directorio actual al directorio padre (que significa el directorio que contiene el directorio actual).</p>
+<p>Revisa dónde estás:</p>
+<pre><code>$ pwd 
+/Users/olasitarska/Desktop
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd 
+C:\Users\olasitarska\Desktop
+</code></pre><p>Ahora es hora de eliminar el directorio <code>djangogirls</code>.</p>
+<blockquote>
+<p><strong>Atención</strong>: Eliminar archivos utilizando <code>del</code>, <code>rmdir</code> o <code>rm</code> hace que no puedan recuperarse, lo que significa que los <em>archivos borrados desaparecerán para siempre</em> Debes ser muy cuidadosa con este comando.</p>
+</blockquote>
+<pre><code>$ rm -r djangogirls
+</code></pre><p>Windows:</p>
+<pre><code>&gt; rmdir/s djangogirls 
+djangogirls, ¿Estás seguro &lt;Y/N&gt;? Y
+</code></pre><p>Hecho! Asegurémonos que en verdad fueron borrados, vamos a ver:</p>
+<pre><code>$ ls
+</code></pre><p>Windows:</p>
+<pre><code>&gt; dir
+</code></pre><h3 id="salida">Salida<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#salida" aria-label="Anchor link for: salida" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>¡Esto es todo por ahora! Ahora puedes cerrar la línea de comandos sin problemas. Vamos a hacerlo al estilo hacker, ¿bien? :)</p>
+<pre><code>$ exit
+</code></pre><p>Windows:</p>
+<pre><code>&gt; exit
+</code></pre><p>Genial, ¿no? :)</p>
+<h2 id="índice">Índice<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#índice" aria-label="Anchor link for: índice" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Aquí hay una lista de algunos comandos útiles:</p>
+<table>
+<thead>
+<tr>
+<th>Comando (Windows)</th>
+<th>Comando (Mac OS / Linux)</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exit</td>
+<td>exit</td>
+<td>Cierra la ventana</td>
+<td><strong>exit</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>cd</td>
+<td>Cambia el directorio</td>
+<td><strong>cd test</strong></td>
+</tr>
+<tr>
+<td>dir</td>
+<td>ls</td>
+<td>Lista directorios/archivos</td>
+<td><strong>dir</strong></td>
+</tr>
+<tr>
+<td>copy</td>
+<td>cp</td>
+<td>Copia de archivos</td>
+<td><strong>copy c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>move</td>
+<td>mv</td>
+<td>Mueve archivos</td>
+<td><strong>move c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>mkdir</td>
+<td>Crea un nuevo directorio</td>
+<td><strong>mkdir testdirectory</strong></td>
+</tr>
+<tr>
+<td>del</td>
+<td>rm</td>
+<td>Elimina archivos/directorios</td>
+<td><strong>del c:\test\test.txt</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Estos son solo algunos de los comandos que puedes ejecutar en la línea de comandos. No vas a usar nada más que esos por ahora.</p>
+<p>Si tienes curiosidad, <a href="http://ss64.com/" target="_blank">ss64.com</a> contiene una referencia completa de comandos para todos los sistemas operativos.</p>
+<h2 id="¿lista">¿Lista?<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#¿lista" aria-label="Anchor link for: ¿lista" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>¡Vamos a sumergirnos en Python!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title" id="results-matching"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#results-matching" aria-label="Anchor link for: results matching" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title" id="no-results-matching">No results matching "<span class="search-query"></span>"<a class="anchorjs-link " href="https://tutorial.djangogirls.org/es/intro_to_command_line/#no-results-matching" aria-label="Anchor link for: no results matching" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="https://tutorial.djangogirls.org/es/how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: ¿Cómo funciona Internet?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="https://tutorial.djangogirls.org/es/python_installation/" class="navigation navigation-next " aria-label="Next page: Instalación de Python" style="margin-right: 17px;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script async="" src="./Introducción a la línea de comandos · Django Girls Tutorial_files/analytics.js.descarga"></script><script async="" src="./Introducción a la línea de comandos · Django Girls Tutorial_files/analytics.js.descarga"></script><script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introducción a la línea de comandos","level":"1.3","depth":1,"next":{"title":"Instalación de Python","level":"1.4","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"¿Cómo funciona Internet?","level":"1.2","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx",""],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg","url":"https://store.djangogirls.org/","description":"💖 Support our work and buy a Django Girls t-shirt! ✨","btnText":"Get a t-shirt!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"DjangoGirls/tutorial","theme":"default","author":"DjangoGirls","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Django Girls Tutorial","language":"es","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial","Django Girls Tutorial":"https://www.gitbook.com/book/djangogirls/djangogirls-tutorial"},"gitbook":true},"gitbook":"*","description":"This book is a Django tutorial created for DjangoGirls event."},"file":{"path":"intro_to_command_line/README.md","mtime":"2017-09-25T22:14:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-25T22:15:53.343Z"},"basePath":"..","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/gitbook.js.descarga"></script>
+    <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/theme.js.descarga"></script>
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/anchor.min.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/anchor-style.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/plugin.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/plugin.js(1).descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/plugin.js(2).descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/bootstrap.min.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/sectionx.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/search-engine.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/search.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/lunr.min.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/search-lunr.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/buttons.js.descarga"></script>
+        
+    
+        
+        <script src="./Introducción a la línea de comandos · Django Girls Tutorial_files/fontsettings.js.descarga"></script>
+        
+    
+
+    
+<div><script style="display: none;" type="application/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57505611-7', 'auto', {name: 'microcdn'});
+  ga('microcdn.send', 'pageview');
+
+  var _cdn_prev_loc = window.location.pathname;
+  window.setInterval(function () {
+    if (window.location.pathname !== _cdn_prev_loc) {
+      _cdn_prev_loc = window.location.pathname;
+      ga('microcdn.send', 'pageview');
+    }
+  }, 100);
+
+</script></div>
+
+
+
+</body></html>
